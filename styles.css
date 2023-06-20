@@ -1,0 +1,126 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+--Purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Off-white);
+    height: 100vh;
+    
+}
+
+.container {
+    background-color: var(--White);
+    width: 420px;
+    max-width: 80%;
+    padding: 30px;
+    position: relative;
+    border-bottom-right-radius: 150px;
+}
+
+input {
+    width: 70px;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid var(--Off-white);
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+input:focus {
+    border: 2px solid var(--Purple);
+}
+
+small {
+    color: red;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.submit-btn {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    background-color: var(--Purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: 80px;
+    cursor: pointer;
+}
+
+
+
+
+
+.submit-btn:hover {
+    background-color: black;
+}
+
+.output span {
+    color: var(--Purple);
+    font-style: italic;
+    font-size: 2.75rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.input-flex {
+    display: flex;
+    border-bottom: 2px solid var(--Off-white);
+    margin-bottom: 20px;
+}
+
+.input-container span {
+    font-size: 12px;
+    color: var(--Smokey-grey);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    input {
+        width: 80%;
+    }
+
+    .output span {
+        font-size: 1.75rem;
+    }
+
+    .submit-btn {
+        width: 40px;
+        height: 40px;
+        right: 40%;
+        top: 82px;
+    }
+
+    .submit-btn img {
+        transform: scale(0.5);
+    }
+}
